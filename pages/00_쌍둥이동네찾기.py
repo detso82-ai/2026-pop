@@ -18,7 +18,9 @@ st.set_page_config(
 )
 
 DATA_FILENAME = "202606_202606_연령별인구현황_월간.csv"
-DATA_PATH = Path(__file__).resolve().parent / DATA_FILENAME
+ROOT_DIR = Path(__file__).resolve().parent.parent
+
+DATA_PATH = ROOT_DIR / DATA_FILENAME
 
 AGE_LABELS = [
     f"{age}세"
